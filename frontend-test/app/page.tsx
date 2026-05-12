@@ -4,6 +4,7 @@ import FeaturesSection from "./components/FeaturesSection";
 import Image from "next/image";
 import styles from "./page.module.css";
 import MoreFeaturesSection from "./components/MoreFeaturesSection";
+import PricingSection from "./components/PricingSection";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <div className={styles.mainContent}>
         <FeaturesSection />
         <MoreFeaturesSection />
+        <PricingSection/>
 
       </div>
     </div>

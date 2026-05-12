@@ -1,0 +1,230 @@
+.pricingSection {
+  width: 100%;
+  background-color: #bff49d;
+  border-radius: 28px;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.heading {
+  font-family: var(--font-bricolage), sans-serif;
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 1;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.dot {
+  color: #000000;
+}
+
+.subText {
+  font-family: var(--font-outfit), sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333333;
+  margin: 0;
+  text-align: center;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  border-radius: 999px;
+  padding: 4px;
+  gap: 2px;
+}
+
+.toggleBtn {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444444;
+  background-color: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.toggleActive {
+  background-color: #1f4842;
+  color: #ffffff;
+}
+
+.cardsRow {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  align-items: start;
+  margin-top: 8px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardRecommended {
+  padding-top: 0;
+}
+
+.recommendedBadge {
+  background-color: #1f4842;
+  color: #ffffff;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  padding: 8px 0;
+  margin: 0 -22px 20px -22px;
+  letter-spacing: 0.3px;
+}
+
+.priceRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.dollar {
+  font-family: var(--font-bricolage), sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-family: var(--font-bricolage), sans-serif;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 1;
+  color: #000000;
+}
+
+.period {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 8px;
+  margin-left: 4px;
+}
+
+.planTitle {
+  font-family: var(--font-bricolage), sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000000;
+  margin: 0;
+}
+
+.credits {
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+  margin: 0;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.checkIcon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background-color: #bff49d;
+  color: #1f4842;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 1px;
+}
+
+.btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 999px;
+  border: 1.5px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btnDark {
+  background-color: #1f4842;
+  color: #ffffff;
+  border-color: #1f4842;
+}
+
+@media (max-width: 960px) {
+  .cardsRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .pricingSection {
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+
+  .heading {
+    font-size: 38px;
+  }
+
+  .cardsRow {
+    grid-template-columns: 1fr;
+  }
+}
