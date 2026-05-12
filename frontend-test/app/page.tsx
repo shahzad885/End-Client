@@ -5,6 +5,10 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import MoreFeaturesSection from "./components/MoreFeaturesSection";
 import PricingSection from "./components/PricingSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import FaqSection from "./components/FAQSection";
+import FooterSection from "./components/FooterSection";
+
 
 export default function Home() {
   return (
@@ -24,9 +28,11 @@ export default function Home() {
       <div className={styles.mainContent}>
         <FeaturesSection />
         <MoreFeaturesSection />
-        <PricingSection/>
-
+        <PricingSection />
+        <TestimonialsSection />
+        <FaqSection/>
       </div>
+       <FooterSection />
     </div>
   );
 }
