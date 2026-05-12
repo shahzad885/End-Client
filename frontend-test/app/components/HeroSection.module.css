@@ -1,0 +1,173 @@
+.heroSection {
+  width: 100%;
+  background-color: #1F4842;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px 80px 80px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.globeImage {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.leftContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 560px;
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  font-family: var(--font-bricolage), sans-serif;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin: 0;
+}
+
+.highlightWord {
+  color: #BFF49D;
+  text-decoration: underline;
+  text-decoration-color: #BFF49D;
+  text-underline-offset: 6px;
+}
+
+.subText {
+  font-family: var(--font-outfit), sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin: 0;
+  max-width: 380px;
+}
+
+.buttonRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.freeArticlesBtn {
+  height: 52px;
+  padding: 0 24px;
+  border: 1.5px solid #ffffff;
+  border-radius: 999px;
+  background-color: white;
+  color: black;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.2s;
+}
+/* 
+.freeArticlesBtn:hover {
+  background-color: #BFF49D;
+  color: #1F4842;
+  border-color: #BFF49D; */
+/* } */
+
+.contactSalesBtn {
+  height: 52px;
+  padding: 0 28px;
+  border: none;
+  border-radius: 999px;
+  background-color: #BFF49D;
+  color: #000000;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+/* .contactSalesBtn:hover {
+  opacity: 0.85;
+} */
+
+.rightContent {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 595px;
+  height: 595px;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+    padding: 40px 24px 60px 24px;
+    gap: 40px;
+    min-height: unset;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .heading {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .subText {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .leftContent {
+    max-width: 100%;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 300px;
+  }
+
+  .buttonRow {
+    flex-wrap: wrap;
+  }
+
+  .globeImage {
+    width: 1093.4px;
+    height: 944.24px;
+    opacity: 40%;
+    /* top: -20px;
+    right: -20px;
+    rotate: calc(-10deg); */
+  }
+}
