@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import FeaturesSection from "./components/FeaturesSection";
 import Image from "next/image";
 import styles from "./page.module.css";
+import MoreFeaturesSection from "./components/MoreFeaturesSection";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
 
       <div className={styles.mainContent}>
         <FeaturesSection />
+        <MoreFeaturesSection />
+
       </div>
     </div>
   );

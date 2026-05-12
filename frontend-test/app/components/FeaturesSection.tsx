@@ -5,7 +5,8 @@ import styles from "./FeaturesSection.module.css";
 interface FeatureItem {
   text: string;
 }
-
+ 
+// Sample data for features
 const featureItems: FeatureItem[] = [
   { text: "Bank-level encryption and secure data handling" },
   { text: "Regulated financial partners and reputable insurers" },

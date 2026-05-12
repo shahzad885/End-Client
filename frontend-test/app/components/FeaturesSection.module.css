@@ -26,7 +26,7 @@
 .sectionHeading {
   font-family: var(--font-bricolage), sans-serif;
   font-weight: 800;
-  font-size: 60px;
+  font-size: 51px;
   line-height: 60px;
   letter-spacing: 0%;
   color: #000000;
@@ -64,7 +64,7 @@
 .featureImageWrapper {
   flex: 0 0 auto;
   position: relative;
-  width: 360px;
+  width: 500px;
   height: 300px;
   border-radius: 16px;
   overflow: hidden;
@@ -96,7 +96,7 @@
   letter-spacing: 0%;
   color: #444444;
   margin: 0;
-  max-width: 440px;
+  max-width: 500px;
 }
 
 .featureList {
